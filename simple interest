@@ -1,0 +1,18 @@
+print ("Enter the Principal amount: ")
+read principal
+
+
+print ("Enter the Rate of interest: ")
+read roi
+
+
+print ("Enter the time: ")
+read time
+
+
+simple_interest=$(expr $principal \* $roi \* $time / 100 )
+printt ("Simple Interest is: " $simple_interest)
+
+
+amount=$(expr $simple_interest + $principal)
+print ("Amount is: "$amount)
